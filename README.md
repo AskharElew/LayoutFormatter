@@ -1,8 +1,8 @@
 # LayoutFormatter
 
-Retrofit your Android layout XML files.
+Better format your Android layout XML files.
 
-It will adjust your attributes order in accordance with the rules,
+It will adjust your attributes orders in accordance with the rules,
 and it will adjust some attributes to the front, and take some attributes at the end of the rows.
 It will make your code format more nice.
 
@@ -28,7 +28,7 @@ Or you could use the default keyboard-shortcut: `ctrl alt F` (`command alt F`).
 
 ### Changelog
 v1.1.5<br/>
-- Removed a rule: android:singleLine="true"(It's deprecated) -> android:maxLines="1"(It's DEPRECATED, too!);<br/>
+- Revert `android:singleLine="true"` issue;<br/>
 
 v1.1.2<br/>
 - Support Windows system;<br/>
@@ -47,14 +47,10 @@ v1.0.4<br/>
 - Add `dip` to `dp`.<br/>
 
 
-### Deprecated
+### Note
 
-This project is deprecated in favor of the Android Studio has the same XML formatter:
-`Editor -> Code Style -> XML -> Arrangement`
-
-**However**
-
-I still think this plugin is more powerful, and easier to use.
+Android Studio also has the same XML formatter:
+`Editor -> Code Style -> XML -> Arrangement`, however I still think this plugin is more powerful, and easier to use.
 
 
 ### Issues
