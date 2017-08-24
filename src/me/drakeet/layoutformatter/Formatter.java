@@ -52,12 +52,16 @@ class Formatter {
         sRule.put(android("layout_toStartOf"), getNextPriority());
         sRule.put(android("layout_toRightOf"), getNextPriority());
         sRule.put(android("layout_toEndOf"), getNextPriority());
+        sRule.put(android("layout_alignLeft"), getNextPriority());
         sRule.put(android("layout_alignStart"), getNextPriority());
         sRule.put(android("layout_alignRight"), getNextPriority());
+        sRule.put(android("layout_alignEnd"), getNextPriority());
         sRule.put(android("layout_alignTop"), getNextPriority());
         sRule.put(android("layout_alignBottom"), getNextPriority());
+        sRule.put(android("layout_alignParentLeft"), getNextPriority());
         sRule.put(android("layout_alignParentStart"), getNextPriority());
         sRule.put(android("layout_alignParentRight"), getNextPriority());
+        sRule.put(android("layout_alignParentEnd"), getNextPriority());
         sRule.put(android("layout_alignParentTop"), getNextPriority());
         sRule.put(android("layout_alignParentBottom"), getNextPriority());
         sRule.put(android("layout_centerInParent"), getNextPriority());
@@ -79,6 +83,63 @@ class Formatter {
         sRule.put(android("paddingEnd"), getPriority());
         sRule.put(android("paddingTop"), getNextPriority());
         sRule.put(android("paddingBottom"), getNextPriority());
+
+        sRule.put(app("layout_constraintWidth_default"), getNextPriority());
+        sRule.put(app("layout_constraintWidth_min"), getNextPriority());
+        sRule.put(app("layout_constraintWidth_max"), getNextPriority());
+        sRule.put(app("layout_constraintHeight_default"), getNextPriority());
+        sRule.put(app("layout_constraintHeight_min"), getNextPriority());
+        sRule.put(app("layout_constraintHeight_max"), getNextPriority());
+
+        sRule.put(app("layout_constraintBaseline_creator"), getNextPriority());
+        sRule.put(app("layout_constraintBaseline_toBaselineOf"), getNextPriority());
+
+        sRule.put(app("layout_constraintDimensionRatio"), getNextPriority());
+
+        sRule.put(app("layout_constraintGuide_percent"), getNextPriority());
+        sRule.put(app("layout_constraintGuide_begin"), getNextPriority());
+        sRule.put(app("layout_constraintGuide_end"), getNextPriority());
+
+        sRule.put(app("layout_constraintVertical_chainStyle"), getNextPriority());
+        sRule.put(app("layout_constraintVertical_bias"), getNextPriority());
+        sRule.put(app("layout_constraintVertical_weight"), getNextPriority());
+
+        sRule.put(app("layout_constraintHorizontal_chainStyle"), getNextPriority());
+        sRule.put(app("layout_constraintHorizontal_bias"), getNextPriority());
+        sRule.put(app("layout_constraintHorizontal_weight"), getNextPriority());
+
+        sRule.put(app("layout_constraintLeft_creator"), getNextPriority());
+        sRule.put(app("layout_constraintLeft_toLeftOf"), getNextPriority());
+        sRule.put(app("layout_constraintStart_toStartOf"), getNextPriority());
+        sRule.put(app("layout_constraintLeft_toRightOf"), getNextPriority());
+        sRule.put(app("layout_constraintStart_toEndOf"), getNextPriority());
+
+        sRule.put(app("layout_constraintRight_creator"), getNextPriority());
+        sRule.put(app("layout_constraintRight_toLeftOf"), getNextPriority());
+        sRule.put(app("layout_constraintEnd_toStartOf"), getNextPriority());
+        sRule.put(app("layout_constraintRight_toRightOf"), getNextPriority());
+        sRule.put(app("layout_constraintEnd_toEndOf"), getNextPriority());
+
+        sRule.put(app("layout_constraintTop_creator"), getNextPriority());
+        sRule.put(app("layout_constraintTop_toTopOf"), getNextPriority());
+        sRule.put(app("layout_constraintTop_toBottomOf"), getNextPriority());
+
+        sRule.put(app("layout_constraintBottom_creator"), getNextPriority());
+        sRule.put(app("layout_constraintBottom_toTopOf"), getNextPriority());
+        sRule.put(app("layout_constraintBottom_toBottomOf"), getNextPriority());
+
+        sRule.put(app("layout_editor_absoluteX"), getNextPriority());
+        sRule.put(app("layout_editor_absoluteY"), getNextPriority());
+
+        sRule.put(app("layout_goneMarginLeft"), getNextPriority());
+        sRule.put(app("layout_goneMarginStart"), getNextPriority());
+        sRule.put(app("layout_goneMarginRight"), getNextPriority());
+        sRule.put(app("layout_goneMarginEnd"), getNextPriority());
+        sRule.put(app("layout_goneMarginTop"), getNextPriority());
+        sRule.put(app("layout_goneMarginBottom"), getNextPriority());
+
+        sRule.put(app("layout_optimizationLevel"), getNextPriority());
+        sRule.put(app("constraintSet"), getNextPriority());
 
         sRule.put(android("layoutAnimation"), getNextPriority());
         sRule.put(android("orientation"), getNextPriority());

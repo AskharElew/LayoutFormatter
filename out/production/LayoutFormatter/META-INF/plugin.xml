@@ -1,7 +1,7 @@
-<idea-plugin version="12">
+<idea-plugin version="14">
     <id>me.drakeet.layoutformatter</id>
     <name>LayoutFormatter</name>
-    <version>1.1.5</version>
+    <version>1.2.0</version>
     <vendor email="drakeet.me@gmail.com" url="https://drakeet.me">drakeet</vendor>
 
     <description><![CDATA[
@@ -16,6 +16,10 @@
     ]]></description>
 
     <change-notes><![CDATA[
+      v1.2.0<br/>
+      - Supported all of attrs of ConstraintLayout<br/>
+      - Supplied some attrs of aligns<br/>
+
       v1.1.5<br/>
       - Removed a rule: android:singleLine="true"(It's deprecated) -> android:maxLines="1"(It's DEPRECATED, too!);<br/>
 
@@ -52,8 +56,7 @@
     </extensions>
 
     <actions>
-        <action id="LayoutFormatter" class="me.drakeet.layoutformatter.LayoutFormatterAction"
-            text="Reformat Layout XML" description="Reformat Layout XML">
+        <action id="LayoutFormatter" class="me.drakeet.layoutformatter.LayoutFormatterAction" text="Reformat Layout XML" description="Reformat Layout XML">
             <add-to-group group-id="RefactoringMenu" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt F"/>
         </action>

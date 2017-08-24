@@ -27,6 +27,10 @@ then `Preferences -> Plugin -> Install plugin from disk...`
 Or you could use the default keyboard-shortcut: `ctrl alt F` (`command alt F`).
 
 ### Changelog
+v1.2.0<br/>
+- Supported all of attrs of `ConstraintLayout`<br/>
+- Supplied some attrs of `align`s<br/>
+    
 v1.1.5<br/>
 - Revert `android:singleLine="true"` issue;<br/>
 
